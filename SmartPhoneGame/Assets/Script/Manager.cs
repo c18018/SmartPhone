@@ -7,6 +7,7 @@ public class Manager : MonoBehaviour {
     public int number = 5;
 
     public GameObject boid;
+    public GameObject target;
 
 	void Start () {
         Vector2 min = new Vector2(transform.position.x - 3.0f,
@@ -17,9 +18,10 @@ public class Manager : MonoBehaviour {
         {
             Vector3 position = new Vector3(Random.Range(min.x, max.x),
                 Random.Range(min.y, max.y), 0);
-            float angle = Random.Range(0, 360.0f);
+            Vector3 direction = (transform.position - target.transform.position).normalized;
 
-            GameObject boids = (GameObject)Instantiate(boid, position, Quaternion.AngleAxis(angle, Vector3.up));
+            GameObject boids = (GameObject)Instantiate(boid, position, 
+                Quaternion.FromToRotation(Vector3.up, direction));
             boids.transform.parent = transform;
         }
 	}
