@@ -418,7 +418,7 @@ RectTransform:
   - {fileID: 182522796}
   - {fileID: 604113024}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 331030484}
   - component: {fileID: 331030483}
   m_Layer: 0
-  m_Name: "\u30B4\u30DF\u7BB1"
+  m_Name: trash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -715,7 +715,7 @@ GameObject:
   - component: {fileID: 551396515}
   - component: {fileID: 551396514}
   m_Layer: 0
-  m_Name: "\u8857\u4E26\u307F001"
+  m_Name: City01
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1342,7 +1342,7 @@ Transform:
   - {fileID: 37108843}
   - {fileID: 779208060}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1016484192
 GameObject:
@@ -1355,7 +1355,7 @@ GameObject:
   - component: {fileID: 1016484194}
   - component: {fileID: 1016484195}
   m_Layer: 0
-  m_Name: "\u8857\u4E26\u307F"
+  m_Name: City
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1581,7 +1581,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1093113670
 GameObject:
@@ -1593,7 +1593,7 @@ GameObject:
   - component: {fileID: 1093113671}
   - component: {fileID: 1093113672}
   m_Layer: 0
-  m_Name: "\u96FB\u67F1"
+  m_Name: Pole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1655,7 +1655,7 @@ SpriteRenderer:
   m_Size: {x: 1280, y: 720}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1098209404
@@ -1669,7 +1669,7 @@ GameObject:
   - component: {fileID: 1098209405}
   - component: {fileID: 1098209407}
   m_Layer: 0
-  m_Name: "\u9262\u690D\u3048"
+  m_Name: plant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1785,7 +1785,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1168226549
 Prefab:
@@ -1845,7 +1845,7 @@ GameObject:
   - component: {fileID: 1272924071}
   - component: {fileID: 1272924070}
   m_Layer: 0
-  m_Name: "\u9262\u690D\u304801"
+  m_Name: plant01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1945,7 +1945,7 @@ GameObject:
   - component: {fileID: 1455440706}
   - component: {fileID: 1455440707}
   m_Layer: 0
-  m_Name: "\u96FB\u67F1 (1)"
+  m_Name: Pole (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2007,7 +2007,7 @@ SpriteRenderer:
   m_Size: {x: 1280, y: 720}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1462771642
@@ -2021,7 +2021,7 @@ GameObject:
   - component: {fileID: 1462771644}
   - component: {fileID: 1462771645}
   m_Layer: 0
-  m_Name: "\u5BB6"
+  m_Name: House
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2148,7 +2148,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4377583948851716, guid: aa7d33a22bf792a4ca81efafea9ea509, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114149248095838376, guid: aa7d33a22bf792a4ca81efafea9ea509,
         type: 2}
@@ -2157,52 +2157,6 @@ Prefab:
       objectReference: {fileID: 1127359044}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa7d33a22bf792a4ca81efafea9ea509, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1704885231
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4998444641321104, guid: d60a0d5ec8954694a93680b7a8f36827, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -574.2512
-      objectReference: {fileID: 0}
-    - target: {fileID: 4998444641321104, guid: d60a0d5ec8954694a93680b7a8f36827, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -129.03438
-      objectReference: {fileID: 0}
-    - target: {fileID: 4998444641321104, guid: d60a0d5ec8954694a93680b7a8f36827, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4998444641321104, guid: d60a0d5ec8954694a93680b7a8f36827, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4998444641321104, guid: d60a0d5ec8954694a93680b7a8f36827, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4998444641321104, guid: d60a0d5ec8954694a93680b7a8f36827, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4998444641321104, guid: d60a0d5ec8954694a93680b7a8f36827, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4998444641321104, guid: d60a0d5ec8954694a93680b7a8f36827, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1698304257392076, guid: d60a0d5ec8954694a93680b7a8f36827, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d60a0d5ec8954694a93680b7a8f36827, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1801442624 stripped
 Transform:
