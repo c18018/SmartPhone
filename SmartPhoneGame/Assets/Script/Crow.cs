@@ -14,7 +14,6 @@ public class Crow : MonoBehaviour
     private void Start()
     {
         moveTF = true;
-        crowChiled = transform.childCount;
     }
 
 
@@ -25,10 +24,9 @@ public class Crow : MonoBehaviour
             Imove();
         }
 
-        if(crowChiled > transform.childCount)
+        if(transform.childCount == 0)
         {
-            moveTF = true;
-            crowChiled --;
+            Destroy(gameObject);
         }
 
     }

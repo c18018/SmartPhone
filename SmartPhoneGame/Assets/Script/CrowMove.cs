@@ -13,4 +13,9 @@ public class CrowMove : MonoBehaviour {
             crow.SendMessage("crowMove");
         } 
     }
+
+    private void Update()
+    {
+        
+    }
 }
