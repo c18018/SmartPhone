@@ -153,3 +153,4 @@ MonoBehaviour:
   ratio: 20
   maxScale: 2
   shotSpeed: 1000
+  radius: 50

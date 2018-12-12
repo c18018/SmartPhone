@@ -21,6 +21,8 @@ public class Action : MonoBehaviour {
     float balloonCenterY;
     public float shotSpeed;
 
+    public float radius;
+
     float Height;
     float Width;
 
@@ -79,7 +81,7 @@ public class Action : MonoBehaviour {
             balloon.transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
 
             balloonY = distance / (Width + Height) / 2 * ratio;
-            balloonCenterY = distance / 2;
+            balloonCenterY = radius * (scale + balloonY) / 2;
 
             maruObj.transform.localPosition = new Vector3(0, balloonCenterY, 0);
         }
