@@ -20,10 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4502628729382838}
   - component: {fileID: 212973005898043672}
-  - component: {fileID: 60067339227313280}
   - component: {fileID: 50067635077819214}
   - component: {fileID: 114210658386294124}
   - component: {fileID: 82163847463184864}
+  - component: {fileID: 60391719409161288}
   m_Layer: 0
   m_Name: balloon
   m_TagString: balloon
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1896115468307566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.796923, y: -40.92598, z: 0}
+  m_LocalPosition: {x: -714.5, y: 21.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,7 +64,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &60067339227313280
+--- !u!60 &60391719409161288
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,14 +88,30 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -21.32, y: 44.4}
-      - {x: -45.5, y: 20.8}
-      - {x: -46.7, y: -14.5}
-      - {x: -16.6, y: -38.6}
-      - {x: 18.1, y: -38.26}
-      - {x: 46.7, y: -14.5}
-      - {x: 47.2, y: 20.1}
-      - {x: 18.7, y: 45.6}
+    - - {x: 46, y: 22}
+      - {x: 39.8, y: 31.6}
+      - {x: 32.7, y: 38.5}
+      - {x: 25.1, y: 43.5}
+      - {x: 13.9, y: 47.7}
+      - {x: 2.3, y: 48.8}
+      - {x: -9.58, y: 48.4}
+      - {x: -22.4, y: 44.2}
+      - {x: -32.6, y: 38.3}
+      - {x: -42.6, y: 27.7}
+      - {x: -48.4, y: 16.7}
+      - {x: -49.8, y: 3.4}
+      - {x: -48.8, y: -7.4}
+      - {x: -43.1, y: -18.9}
+      - {x: -33, y: -29.5}
+      - {x: -22.5, y: -36.4}
+      - {x: -8.9, y: -40.3}
+      - {x: 0.28, y: -40.5}
+      - {x: 11.78, y: -40.1}
+      - {x: 23.8, y: -36.2}
+      - {x: 35.5, y: -28}
+      - {x: 44.7, y: -18}
+      - {x: 49.8, y: -3}
+      - {x: 49.1, y: 13.9}
 --- !u!82 &82163847463184864
 AudioSource:
   m_ObjectHideFlags: 1
@@ -239,7 +255,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3b4b24a5db2b9d847b37e620a12ea987, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.88235295}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
