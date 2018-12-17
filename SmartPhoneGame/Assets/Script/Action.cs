@@ -12,7 +12,8 @@ public class Action : MonoBehaviour {
     public GameObject balloon;
     GameObject maruObj;
 
-    float scale;
+    float scaleX;
+    float scaleY;
     public float time;
     public float ratio;
     public float maxScale;
@@ -70,28 +71,31 @@ public class Action : MonoBehaviour {
     {
         distance = (screenPos - startPos).magnitude;
 
+        scaleX = scaleX + Time.deltaTime * time;
+            scaleX = Mathf.Clamp(scaleX, 0f, maxScale);
+        Debug.Log(scaleX);
+
         if (distance == 0)
         {
-            scale = scale + Time.deltaTime * time;
-            scale = Mathf.Clamp(scale, 0f, maxScale);
-        }
-        else
-        {
+            scaleY = scaleY + Time.deltaTime * time;
+            scaleY = Mathf.Clamp(scaleY, 0f, maxScale);
+        }else{
             Vector3 direction = (screenPos - startPos).normalized;
             balloon.transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
 
             balloonY = distance / (Width + Height) / 2 * ratio;
-            balloonCenterY = radius * (scale + balloonY);
+            balloonCenterY = radius * (scaleY + balloonY);
 
             maruObj.transform.localPosition = new Vector3(0, balloonCenterY, 0);
         }
 
-        maruObj.transform.localScale = new Vector3(scale, scale + balloonY, 1);
+        maruObj.transform.localScale = new Vector3(scaleX, scaleY + balloonY, 1);
     }
     
     void Break()
     {
-        scale = 0;
+        scaleX = 0;
+        scaleY = 0;
         balloonY = 0;
         maruObj.SendMessage("smallLet");
         Rigidbody2D balloonRig = maruObj.GetComponent<Rigidbody2D>();

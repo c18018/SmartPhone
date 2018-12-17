@@ -25,7 +25,6 @@ public class Battery : MonoBehaviour {
         {
             seconds -= Time.deltaTime;
             battery.value = seconds / secondCons;
-            Debug.Log(seconds);
         }
 	}
 
