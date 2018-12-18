@@ -73,7 +73,6 @@ public class Action : MonoBehaviour {
 
         scaleX = scaleX + Time.deltaTime * time;
             scaleX = Mathf.Clamp(scaleX, 0f, maxScale);
-        Debug.Log(scaleX);
 
         if (distance == 0)
         {
