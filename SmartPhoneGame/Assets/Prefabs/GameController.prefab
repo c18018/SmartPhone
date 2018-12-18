@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Maru: {fileID: 1896115468307566, guid: 4ece99bfad154134a8dc961785a144c0, type: 2}
   balloon: {fileID: 0}
-  time: 0.4
+  time: 0.2
   ratio: 20
   maxScale: 2
   shotSpeed: 1000
