@@ -13,7 +13,7 @@ public class Ranking : MonoBehaviour {
     public int score = 0;
 
     int rank1;
-    int rank2;
+    int rank2 ;
     int rank3;
 
     void Start()
@@ -21,12 +21,13 @@ public class Ranking : MonoBehaviour {
         secondScore = Battery.seconds;
         score = Mathf.RoundToInt(secondScore * 100);
 
-        
         rank1 = PlayerPrefs.GetInt("first", 0);
         rank2 = PlayerPrefs.GetInt("second", 0);
         rank3 = PlayerPrefs.GetInt("third", 0);
 
-        if(score > rank1)
+        Debug.Log(score + " : " + rank1 + " : " + rank2 + " : " + rank3);
+
+        if (score > rank1)
         {
             rank3 = rank2;
             rank2 = rank1;
