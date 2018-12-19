@@ -555,7 +555,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -600,11 +600,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 59.9}
-      - {x: -8, y: 40}
-      - {x: -8, y: 11}
+    - - {x: -2, y: 65}
+      - {x: -12, y: 50}
+      - {x: -12, y: 11}
       - {x: 9, y: 11}
-      - {x: 9, y: 40}
+      - {x: 9, y: 50}
 --- !u!61 &61986241983155404
 BoxCollider2D:
   m_ObjectHideFlags: 1

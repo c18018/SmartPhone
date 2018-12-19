@@ -25,8 +25,6 @@ public class Ranking : MonoBehaviour {
         rank2 = PlayerPrefs.GetInt("second", 0);
         rank3 = PlayerPrefs.GetInt("third", 0);
 
-        Debug.Log(score + " : " + rank1 + " : " + rank2 + " : " + rank3);
-
         if (score > rank1)
         {
             rank3 = rank2;

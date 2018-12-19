@@ -12,7 +12,7 @@ public class Action : MonoBehaviour {
     public GameObject balloon;
     GameObject maruObj;
 
-    float scaleX;
+    float scaleXZ;
     float scaleY;
     public float time;
     public float ratio;
@@ -53,6 +53,7 @@ public class Action : MonoBehaviour {
         {
             startPos = screenPos;
             swellPos = Camera.main.ScreenToWorldPoint(screenPos);
+            swellPos.z = 300f;
 
             balloon.transform.position = swellPos;
             balloon.transform.rotation = Quaternion.Euler(0, 0, 0);
@@ -71,8 +72,8 @@ public class Action : MonoBehaviour {
     {
         distance = (screenPos - startPos).magnitude;
 
-        scaleX = scaleX + Time.deltaTime * time;
-            scaleX = Mathf.Clamp(scaleX, 0f, maxScale);
+        scaleXZ = scaleXZ + Time.deltaTime * time;
+            scaleXZ = Mathf.Clamp(scaleXZ, 0f, maxScale);
 
         if (distance == 0)
         {
@@ -83,17 +84,17 @@ public class Action : MonoBehaviour {
             balloon.transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
 
             balloonY = distance / (Width + Height) / 2 * ratio;
-            balloonCenterY = radius * (scaleY + balloonY);
+            balloonCenterY = radius * (scaleY + balloonY - 1);
 
             maruObj.transform.localPosition = new Vector3(0, balloonCenterY, 0);
         }
 
-        maruObj.transform.localScale = new Vector3(scaleX, scaleY + balloonY, 1);
+        maruObj.transform.localScale = new Vector3(scaleXZ, scaleY + balloonY, scaleXZ);
     }
     
     void Break()
     {
-        scaleX = 0;
+        scaleXZ = 0;
         scaleY = 0;
         balloonY = 0;
         maruObj.SendMessage("smallLet");

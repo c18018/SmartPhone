@@ -147,10 +147,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96170f65aa3208643a51a1a3f7a81cb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Maru: {fileID: 1896115468307566, guid: 4ece99bfad154134a8dc961785a144c0, type: 2}
+  Maru: {fileID: 1136389788329066, guid: 3fe0b7903e5c9f4418a4f232e802042f, type: 2}
   balloon: {fileID: 0}
-  time: 0.2
-  ratio: 20
-  maxScale: 2
+  time: 20
+  ratio: 3200
+  maxScale: 200
   shotSpeed: 1000
-  radius: 50
+  radius: 0.5
