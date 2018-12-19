@@ -23,7 +23,10 @@ public class Scene : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "balloon") open();
+        if (SceneManager.GetActiveScene().name == "Cafe")
+        {
+            SceneManager.LoadScene("City");
+        }
 
         if (SceneManager.GetActiveScene().name == "City")
         {
@@ -33,14 +36,6 @@ public class Scene : MonoBehaviour {
         if (SceneManager.GetActiveScene().name == "House")
         {
             SceneManager.LoadScene("Ending");
-        }
-    }
-
-    void open()
-    {
-        if (SceneManager.GetActiveScene().name == "Cafe")
-        {
-            SceneManager.LoadScene("City");
         }
     }
 }
