@@ -17,7 +17,7 @@ public class Battery : MonoBehaviour {
 
     private void Start()
     {
-        seconds = secondCons;
+        seconds = secondCons + 1.0f;
     }
 
 
