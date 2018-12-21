@@ -257,7 +257,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_MethodName: Stage2Button
+        m_MethodName: Stage3Button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -424,8 +424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 5.35, y: 193.3}
-  m_SizeDelta: {x: 216.7, y: 71.2}
+  m_AnchoredPosition: {x: -0.000025749, y: 191.5}
+  m_SizeDelta: {x: 205.45, y: 67.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224184040636812220
 RectTransform:
@@ -464,7 +464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 83}
+  m_AnchoredPosition: {x: -0.27495, y: 85}
   m_SizeDelta: {x: 206, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224809763130589810

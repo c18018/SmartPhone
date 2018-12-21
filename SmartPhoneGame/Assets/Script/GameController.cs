@@ -33,8 +33,5 @@ public class GameController : MonoBehaviour {
             Destroy(GetComponent<GameController>());
             //.enabled = false;
         }
-        Debug.Log(alfa);
-
-        
 	}
 }

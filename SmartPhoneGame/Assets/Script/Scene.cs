@@ -24,12 +24,16 @@ public class Scene : MonoBehaviour {
 
     public void Stage2Button()
     {
+        AudioSource click = GetComponent<AudioSource>();
+        click.Play();
         timerStop = false;
         SceneManager.LoadScene("City");
     }
 
     public void Stage3Button()
     {
+        AudioSource click = GetComponent<AudioSource>();
+        click.Play();
         timerStop = false;
         SceneManager.LoadScene("House");
     }
