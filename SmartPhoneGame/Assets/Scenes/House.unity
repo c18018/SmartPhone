@@ -447,7 +447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &182522796
 RectTransform:
   m_ObjectHideFlags: 0
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bee12cf857a70f4caabb5f162981a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondCons: 300
+  secondCons: 120
   battery: {fileID: 740934413}
   player: {fileID: 833923582}
   GoFilter: {fileID: 604113025}
@@ -843,6 +843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae2f030da77aba44c9cd3883b93e2682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Clear: {fileID: 0}
 --- !u!82 &304017140
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2528,6 +2529,11 @@ Prefab:
     - target: {fileID: 4990677555839026, guid: 7a2ac23925e75354a99ef13563f481e7, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114340812856831482, guid: 7a2ac23925e75354a99ef13563f481e7,
+        type: 2}
+      propertyPath: Clear
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a2ac23925e75354a99ef13563f481e7, type: 2}

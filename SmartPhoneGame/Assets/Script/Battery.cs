@@ -7,26 +7,48 @@ using UnityEngine.SceneManagement;
 public class Battery : MonoBehaviour {
 
     public float secondCons;
-    public static float seconds;
+    float seconds;
+    public static float seconds1 = 0;
+    public static float seconds2 = 0;
+    public static float seconds3 = 0;
     public Slider battery;
     public GameObject player;
     public GameObject GoFilter;
 
-	void Start () {
+    private void Start()
+    {
+        seconds = secondCons;
+    }
+
+
+    void Update () {
+        if (seconds <= 0) scene();
+
+        if(seconds > 0)
+        {
+            countDown();
+        }
+
         if (SceneManager.GetActiveScene().name == "Cafe")
         {
-            seconds = secondCons;
+            seconds1 = seconds;
+        }else if (SceneManager.GetActiveScene().name == "City")
+        {
+            seconds2 = seconds;
+        }else if (SceneManager.GetActiveScene().name == "House")
+        {
+            seconds3 = seconds;
         }
-	}
-	
-	void Update () {
-        if (seconds <= 0) scene();
-        if(seconds > 0)
+    }
+
+    void countDown()
+    {
+        if (Scene.timerStop == false)
         {
             seconds -= Time.deltaTime;
             battery.value = seconds / secondCons;
         }
-	}
+    }
 
     void scene()
     {

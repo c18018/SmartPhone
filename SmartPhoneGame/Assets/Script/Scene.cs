@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Scene : MonoBehaviour {
 
-    static bool openTF;
+    public static bool timerStop;
+    public GameObject Clear = null;
     
     public void StartButtonClicked()
     {
@@ -21,17 +22,33 @@ public class Scene : MonoBehaviour {
         SceneManager.LoadScene("Title");
     }
 
+    public void Stage2Button()
+    {
+        timerStop = false;
+        SceneManager.LoadScene("City");
+    }
+
+    public void Stage3Button()
+    {
+        timerStop = false;
+        SceneManager.LoadScene("House");
+    }
+
+    public void ScoreButton()
+    {
+        SceneManager.LoadScene("Ending");
+    }
+
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (SceneManager.GetActiveScene().name == "Cafe")
-        {
-            SceneManager.LoadScene("City");
-        }
+        timerStop = true;
 
-        if (SceneManager.GetActiveScene().name == "City")
+        if (Clear != null)
         {
-            SceneManager.LoadScene("House");
+            Clear.SetActive(true);
         }
+        
 
         if (SceneManager.GetActiveScene().name == "House")
         {

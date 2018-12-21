@@ -13,13 +13,15 @@ public class Ranking : MonoBehaviour {
     public int score = 0;
 
     int rank1;
-    int rank2 ;
+    int rank2;
     int rank3;
 
     void Start()
     {
-        secondScore = Battery.seconds;
+        secondScore = Battery.seconds1 + Battery.seconds2 + Battery.seconds3;
         score = Mathf.RoundToInt(secondScore * 100);
+
+        //PlayerPrefs.DeleteAll();
 
         rank1 = PlayerPrefs.GetInt("first", 0);
         rank2 = PlayerPrefs.GetInt("second", 0);
