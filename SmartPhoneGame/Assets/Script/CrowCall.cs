@@ -5,7 +5,7 @@ using UnityEngine;
 public class CrowCall : MonoBehaviour
 {
     bool coll;
-    public GameObject InsObj;
+    public GameObject crowins;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,7 +25,7 @@ public class CrowCall : MonoBehaviour
 
     void TimeLag()
     {
-        InsObj.SendMessage("Appear");
+        crowins.SendMessage("insTF");
         Destroy(gameObject);
     }
 }
