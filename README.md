@@ -2,7 +2,7 @@
 
 ## ファイル構成  
 * [Unityデータ](./SmartPhoneGame/)  
-* [ビルドデータ]()  
+* [ビルドデータ](./Executable/)  
 
 ## 概要  
 
@@ -10,8 +10,8 @@
 横画面ランゲーム  
 
 ## プラットフォーム  
-* [Androidビルドデータ]()    
-* [Windowsビルドデータ]()  
+* [Androidビルドデータ](./Executable/Smaho20cm_Android/)    
+* [Windowsビルドデータ](./Executable/Smaho20cm_Windows/)  
 
 ## 担当プログラムファイル  
 * [風船の操作](./SmartPhoneGame/Assets/Script/Action.cs)  
