@@ -24,6 +24,7 @@ public class Crow : MonoBehaviour
             Imove();
         }
 
+        //　子供がいなくなったら破壊される
         if(transform.childCount == 0)
         {
             Destroy(gameObject);
@@ -31,6 +32,8 @@ public class Crow : MonoBehaviour
 
     }
 
+
+    //　プレイヤーに向かって動く
     void Imove()
     {
         playerPos = GameObject.FindWithTag("Player").transform.position;

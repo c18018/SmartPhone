@@ -22,12 +22,14 @@ public class Battery : MonoBehaviour {
 
 
     void Update () {
+        //　バッテリーがゼロになったらゲームオーバーObjを出す
         if (seconds <= 0) scene();
 
         if(seconds > 0)
         {
             countDown();
         }
+
 
         if (SceneManager.GetActiveScene().name == "Cafe")
         {
@@ -41,6 +43,8 @@ public class Battery : MonoBehaviour {
         }
     }
 
+
+    //　バッテリーを一秒ごとに減らす。
     void countDown()
     {
         if (Scene.timerStop == false)
@@ -50,12 +54,16 @@ public class Battery : MonoBehaviour {
         }
     }
 
+
+    // プレイヤーの動きを止める　２秒後にGameOverを呼ぶ
     void scene()
     {
         player.SendMessage("moveF");
         Invoke("GameOver", 2.0f);
     }
 
+
+    // ゲームオーバーObjを出す
     void GameOver()
     {
         GoFilter.gameObject.SetActive(true);

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraRange : MonoBehaviour {
 
+    //　カメラの範囲
     public float minPosX;
     public float maxPosX;
     public float minPosY;
@@ -14,6 +15,8 @@ public class CameraRange : MonoBehaviour {
     private float cameraX;
     private float cameraY;
 
+
+    //　最初のプレイヤーとカメラの位置の差
     void Start () {
         offset = transform.position - player.transform.position;
 	}
@@ -22,6 +25,8 @@ public class CameraRange : MonoBehaviour {
         CameraMove();
 	}
 
+
+    // カメラとプレイヤーの差は一定　カメラが範囲外に出るようであれば差は崩す
     void CameraMove()
     {
         cameraX = Mathf.Clamp(player.transform.position.x + offset.x, minPosX, maxPosX);
