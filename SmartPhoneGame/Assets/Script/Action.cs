@@ -47,6 +47,8 @@ public class Action : MonoBehaviour {
 
     }
 
+
+    //　タッチされてたら風船を膨らます
     void Swell()
     {
         if (swell)
@@ -68,6 +70,8 @@ public class Action : MonoBehaviour {
 
     }
 
+
+    // スワイプしたら風船を伸ばす
     void Extend()
     {
         distance = (screenPos - startPos).magnitude;
@@ -92,6 +96,8 @@ public class Action : MonoBehaviour {
         maruObj.transform.localScale = new Vector3(scaleXZ, scaleY + balloonY, scaleXZ);
     }
     
+
+    // 離したら最初にタップした位置に向かって飛んでいく。（消える）
     void Break()
     {
         scaleXZ = 0;

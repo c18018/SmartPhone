@@ -30,6 +30,7 @@ public class Balloon : MonoBehaviour {
         }
     }
 
+    // 
     public void smallLet()
     {
         PerTime = transform.localScale / parcent;
@@ -38,6 +39,8 @@ public class Balloon : MonoBehaviour {
         Invoke("reLayer", 0.5f);
     }
 
+
+    //　風船がカラスにあたったらカラスは消える
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Crow")
